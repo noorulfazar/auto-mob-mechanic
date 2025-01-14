@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoMob-Mechanic - Book Service</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 5px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        main {
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding-bottom: 4rem; /* Add padding to the bottom */
+        }
+        form div {
+            margin-bottom: 1rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            padding: 0.75rem;
+            font-size: 1rem;
+        }
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 1px 0;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="services.html">Services</a> |
+            <a href="booking.html">Book Service</a> |
+            <a href="appointment.html">Schedule Appointment</a>
+        </nav>
+        <h1>Book a Service</h1>
+    </header>
+
+    <main>
+        <form action="booking-success.html" method="get">
+            <div>
+                <label for="service">Select Service:</label>
+                <select id="service" name="service" required>
+                    <option value="">Choose a service</option>
+                    <option value="preventive">Preventive Maintenance</option>
+                    <option value="body">Body Repair</option>
+                    <option value="care">Car Care</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div>
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div>
+                <label for="time">Preferred Time:</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+
+            <div>
+                <label for="vehicle">Vehicle Model:</label>
+                <input type="text" id="vehicle" name="vehicle" required>
+            </div>
+
+            <div>
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+            </div>
+
+            <!-- <button type="submit">Book Service</button> -->
+            <input type="submit" value="Book Service"/>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 AutoMob-Mechanic. All rights reserved.</p>
+    </footer>
+</body>
+</html>
